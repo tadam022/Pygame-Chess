@@ -129,9 +129,9 @@ def get_game_state_message(game_state):
 
 def draw_promotion_box(surface):
     font = pygame.font.SysFont('Sans', 20, True, False)
-    text = "Press q for Queen \n" \
-           "Press n for Knight \n" \
-           "Press r for Rook \n" \
+    text = "Press q for Queen | " \
+           "Press n for Knight | " \
+           "Press r for Rook | " \
            "Press b for Bishop "
     text_surface = font.render(text, True, WHITE)
     rect = text_surface.get_rect()
@@ -294,12 +294,12 @@ def main(fen=None, debug=False):
                         pop_up = True
 
                 elif mouse_button == 3 and not selected_piece and not pop_up:
-
+                    '''
                     remove_piece = chess_board.get_piece_clicked()
                     if remove_piece:
                         remove_piece.cell.chess_piece = None
                         remove_piece.active = False
-
+                    '''
             elif event.type == pygame.KEYDOWN and not pop_up:
 
                 if promotion_pop_up:
