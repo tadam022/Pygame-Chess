@@ -1,6 +1,8 @@
 
 Made in Python 3.9, requires pygame 2.0.0
 
+Perft results used for testing were from: https://www.chessprogramming.org/Perft_Results
+
 Controls:
 LMB : click and move pieces
 c : resets board
